@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Server POST Listener</title>
+    <script src="load.js"></script>
+</head>
+<body>
+  <form action="set_log.php" method="POST">
+    <fieldset>
+      <legend>Send to Server</legend>
+      <p>
+        Message:
+        <textarea name="message"></textarea>
+      </p>
+      <p>
+        <input type="submit" value="SEND" />
+      </p>
+    </fieldset>
+  </form>
+  <br>
+  <br>
+  <form>
+    <fieldset>
+      <legend>Received Text</legend>
+      <p>
+        <pre id="result"></pre>
+      </p>
+    </fieldset>
+  </form>
+  <br>
+  <br>
+  <br>
+  <br>
+  <form action="file_uploader.php" method="POST" enctype="multipart/form-data">
+    <fieldset>
+      <legend>Upload File to Server</legend>
+      <p>
+        <a href="files/" target="_blank">Files</a>
+      </p>
+      <br>
+      <input type="file" name="file_name">
+      <input type="submit" value="Upload">
+      <br>
+      <br>
+    </fieldset>
+  </form>
+</body>
+</html>
